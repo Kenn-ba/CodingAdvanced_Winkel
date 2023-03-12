@@ -64,21 +64,28 @@ h1 {
   vertical-align: middle;
 }
 
-.products{
+.productsTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.products {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.products__row{
+
+.products__row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
   column-gap: 10%;
 }
-.item{
+
+.item {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -86,12 +93,13 @@ h1 {
   text-align: center;
   margin-bottom: 10vh;
 }
-.item__image{
+
+.item__image {
   width: 60%;
   height: auto;
 }
 
-.opening{
+.opening {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -99,109 +107,119 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.hours{
+
+.hours {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.hours__title{
+
+.hours__title {
   text-align: center;
   font-size: 3rem;
 }
-.hours__table{
+
+.hours__table {
   justify-content: center;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.table__days{
+
+.table__days {
   display: flex;
   flex-direction: column;
   text-align: right;
   margin-right: 5%;
 }
-.table__line{
+
+.table__line {
   width: 5px;
   background-color: white;
   border-radius: 10px;
 }
-.table__time{
+
+.table__time {
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 5%;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.contact__title{
+
+.contact__title {
   text-align: center;
   font-size: 3rem;
 }
-.contact__info{
+
+.contact__info {
   justify-content: center;
   align-items: center;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-#loader{
-	position: relative;
-	width: 5px;
-	height: 5px;
-	top: 49%;
-	top: -webkit-calc(50% - 43px);
-	top: calc(50% - 2.5px);
-	left: 49%;
-	left: -webkit-calc(50% - 43px);
-	left: calc(50% - 2.5px);
 
-	background-color: #fff;
-	border-radius: 50px;
+#loader {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  top: 49%;
+  top: -webkit-calc(50% - 43px);
+  top: calc(50% - 2.5px);
+  left: 49%;
+  left: -webkit-calc(50% - 43px);
+  left: calc(50% - 2.5px);
+
+  background-color: #fff;
+  border-radius: 50px;
 }
 
-#loader:before{
-	content: "";
-	position: absolute;
-	top: -38px;
-	border-top: 3px solid #fff;
-	border-right: 3px solid #fff;
-	border-radius: 0 50px 0px  0;
-	width: 40px;
-	height: 40px;
-	background-color: rgba(255, 255, 255, .1);
-	-webkit-transform-origin:  0% 100%;
-			transform-origin:  0% 100% ;
-	-webkit-animation: loader2 1.5s linear infinite;
-			animation: loader2 1.5s linear infinite;
+#loader:before {
+  content: "";
+  position: absolute;
+  top: -38px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 0 50px 0px 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .1);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-animation: loader2 1.5s linear infinite;
+  animation: loader2 1.5s linear infinite;
 }
 
-#loader:after{
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 2px;
-	border-bottom: 3px solid #fff;
-	border-left: 3px solid #fff;
-	border-radius: 0 0px 0px  50px;
-	width: 40px;
-	height: 40px;
-	background-color: rgba(255, 255, 255, .1);
-	-webkit-transform-origin:  100% 0%;
-			transform-origin:  100% 0% ;
-	-webkit-animation: loader2 1.5s linear infinite;
-			animation: loader2 1.5s linear infinite;
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-radius: 0 0px 0px 50px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .1);
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-animation: loader2 1.5s linear infinite;
+  animation: loader2 1.5s linear infinite;
 }
 
 /* For screens smaller than 768px (e.g. mobile devices) */
 @media (max-width: 767px) {
-  .menu{
+  .menu {
     display: none;
   }
-  .menu.show{
+
+  .menu.show {
     display: block;
     height: 25vh;
     animation: growDown 300ms ease-in-out
@@ -209,20 +227,23 @@ h1 {
 
   @keyframes growDown {
     0% {
-        transform: scaleY(0)
+      transform: scaleY(0)
     }
+
     80% {
-        transform: scaleY(1.1)
+      transform: scaleY(1.1)
     }
+
     100% {
-        transform: scaleY(1)
+      transform: scaleY(1)
     }
-}
-  .menu__item{
+  }
+
+  .menu__item {
     display: block;
     line-height: 3rem;
   }
-  
+
   .wrapper {
     width: 10%;
     margin-left: 45%;
@@ -276,30 +297,37 @@ h1 {
     line-height: 6vh;
     margin-top: 22vh;
   }
-  .products{
+
+  .products {
     width: 100%;
   }
+
   .products__row {
     flex-direction: column;
     column-gap: 0;
   }
+
   .item {
     width: 90%;
     margin-bottom: 5vh;
   }
-  .opening{
+
+  .opening {
     flex-direction: column;
   }
-  .hours{
+
+  .hours {
     width: 100%;
   }
-  .hours__title{
+
+  .hours__title {
     font-size: 2rem;
   }
-  .contact{
+
+  .contact {
     width: 100%;
   }
-  
+
 }
 
 /* For screens between 768px and 1024px (e.g. tablets) */
@@ -309,18 +337,22 @@ h1 {
     line-height: 8vh;
     margin-top: 20vh;
   }
+
   .item {
     width: 40%;
     margin-bottom: 7.5vh;
   }
+
   .opening {
     flex-direction: column;
   }
+
   .hours {
     width: 100%;
     margin-right: 0;
     margin-bottom: 3rem;
   }
+
   .contact {
     width: 100%;
   }
@@ -334,22 +366,23 @@ h1 {
     margin-top: 20vh;
     margin-bottom: 20vh;
   }
+
   .item {
     width: 25%;
     margin-bottom: 10vh;
   }
+
   .opening {
     justify-content: space-between;
   }
+
   .hours {
     width: 45%;
     margin-right: 5%;
   }
+
   .contact {
     width: 45%;
     margin-left: 5%;
   }
 }
-
-
-
