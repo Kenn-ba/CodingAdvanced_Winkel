@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import { MAPBOX_ACCESS_TOKEN } from './secretMapbox.json';
+
 // init Swiper:
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
@@ -32,7 +34,6 @@ const swiper = new Swiper('.swiper', {
 
 })
 
-const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1Ijoia2VubmV0aGJhIiwiYSI6ImNsYXBmaHkwcTBpMGQzcW1rcG9xajNvNnkifQ.WePKR4KpFZ4nCekleZyDMA';
 
 async function reverseGeocodeAsync(lon,lat){
   const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/812%20Broadway%2C%20New%20York%2C%20NY%2010003%2C%20United%20States.json?proximity=-73.990593%2C40.740121&access_token=' + MAPBOX_ACCESS_TOKEN; 
