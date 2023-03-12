@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+
+
+:root {
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 50vh;
+  opacity: 60%;
+  z-index: 2;
+  margin-bottom: 5vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: #2D2D2D;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Jost', sans-serif;
+  color: white;
+  margin-bottom: 10vh;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 10vh;
+  line-height: 10vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 3;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.menu {
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  list-style: none;
+  line-height: 2rem;
+  height: 5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.menu__item {
+  top: 0;
+  color: white;
+  text-decoration: none;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.products__row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  column-gap: 10%;
+}
+.item{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+.item__image{
+  width: 60%;
+  height: auto;
+}
+
+.opening{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.hours{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.hours__title{
+  text-align: center;
+  font-size: 3rem;
+}
+.hours__table{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.table__days{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 5%;
+}
+.table__line{
+  width: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+.table__time{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contact__title{
+  text-align: center;
+  font-size: 3rem;
+}
+.contact__info{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#loader{
+	position: relative;
+	width: 5px;
+	height: 5px;
+	top: 49%;
+	top: -webkit-calc(50% - 43px);
+	top: calc(50% - 2.5px);
+	left: 49%;
+	left: -webkit-calc(50% - 43px);
+	left: calc(50% - 2.5px);
+
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+#loader:before{
+	content: "";
+	position: absolute;
+	top: -38px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-radius: 0 50px 0px  0;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, .1);
+	-webkit-transform-origin:  0% 100%;
+			transform-origin:  0% 100% ;
+	-webkit-animation: loader2 1.5s linear infinite;
+			animation: loader2 1.5s linear infinite;
+}
+
+#loader:after{
+	content: "";
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	border-bottom: 3px solid #fff;
+	border-left: 3px solid #fff;
+	border-radius: 0 0px 0px  50px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, .1);
+	-webkit-transform-origin:  100% 0%;
+			transform-origin:  100% 0% ;
+	-webkit-animation: loader2 1.5s linear infinite;
+			animation: loader2 1.5s linear infinite;
+}
+
+/* For screens smaller than 768px (e.g. mobile devices) */
+@media (max-width: 767px) {
+  .menu{
+    display: none;
+  }
+  .menu.show{
+    display: block;
+    height: 25vh;
+    animation: growDown 300ms ease-in-out
+  }
+
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+  .menu__item{
+    display: block;
+    line-height: 3rem;
+  }
+  
+  .wrapper {
+    width: 10%;
+    margin-left: 45%;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+  }
+
+  .wrapper.open {
+    transform: rotate(-45deg);
+  }
+
+  .wrapper__line {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+  }
+
+  .wrapper__line.half {
+    width: 50%;
+  }
+
+  .wrapper__line.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+  }
+
+  .open .wrapper__line.start {
+    transform: rotate(-90deg) translateX(3px);
+  }
+
+  .wrapper__line.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+  }
+
+  .open .wrapper__line.end {
+    transform: rotate(-90deg) translateX(-3px);
+  }
+
+
+  h1 {
+    font-size: 6vh;
+    line-height: 6vh;
+    margin-top: 22vh;
+  }
+  .products{
+    width: 100%;
+  }
+  .products__row {
+    flex-direction: column;
+    column-gap: 0;
+  }
+  .item {
+    width: 90%;
+    margin-bottom: 5vh;
+  }
+  .opening{
+    flex-direction: column;
+  }
+  .hours{
+    width: 100%;
+  }
+  .hours__title{
+    font-size: 2rem;
+  }
+  .contact{
+    width: 100%;
+  }
+  
+}
+
+/* For screens between 768px and 1024px (e.g. tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 8vh;
+    line-height: 8vh;
+    margin-top: 20vh;
+  }
+  .item {
+    width: 40%;
+    margin-bottom: 7.5vh;
+  }
+  .opening {
+    flex-direction: column;
+  }
+  .hours {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .contact {
+    width: 100%;
+  }
+}
+
+/* For screens larger than 1024px (e.g. desktops) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 10vh;
+    line-height: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+  .item {
+    width: 25%;
+    margin-bottom: 10vh;
+  }
+  .opening {
+    justify-content: space-between;
+  }
+  .hours {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .contact {
+    width: 45%;
+    margin-left: 5%;
+  }
+}
+
+
+

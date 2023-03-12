@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <!--bron menu icon
+https://codepen.io/JoseRosario/pen/BWqMwK-->
+  <div class="wrapper">
+    <div class="wrapper__line half start"></div>
+    <div class="wrapper__line"></div>
+    <div class="wrapper__line half end"></div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+  <nav class="menu" id="1">
+    <a class="menu__item" href="#1">Home</a>
+    <a class="menu__item" href="#2">Products</a>
+    <a class="menu__item" href="#3">Store Hours</a>
+    <a class="menu__item" href="#3">Contact</a>
+  </nav>
+
+  <h1>High Sneaks</h1>
+  <div class="swiper">
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <!--bronnen foto's 
+              https://cdn.shopify.com/s/files/1/0603/3031/1875/collections/banner_aj.jpg?v=1639644303
+              https://cdn.shopify.com/s/files/1/0603/3031/1875/collections/banner_aj5.jpg?v=1639644957
+              https://cdn.shopify.com/s/files/1/0603/3031/1875/collections/banner_nike2_165c6f9f-79b8-47d2-8784-da095b246845.jpg?v=1633316029
+              https://cdn.shopify.com/s/files/1/0603/3031/1875/collections/banner_aj3.jpg?v=1639644262
+              https://cdn.shopify.com/s/files/1/0603/3031/1875/collections/banner_aj4.jpg?v=1639645323
+            -->
+      <div class="swiper-slide"><img src="/1.jpg" /></div>
+      <div class="swiper-slide"><img src="/2.jpg" /></div>
+      <div class="swiper-slide"><img src="/3.jpg" /></div>
+      <div class="swiper-slide"><img src="/4.jpg" /></div>
+      <div class="swiper-slide"><img src="/5.jpg" /></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!--bronnen product foto's
+      https://www.kickscrew.com/
+    -->
+    <div class="products">
+      <div class="products__row">
+          <div class="item">
+              <img class="item__image" src="/aj1.1.webp" alt="">
+              <h2 class="item__name">Air Jordan 1 Retro High OG<br>'Fearless'</h2>
+              <p class="item__price">€375</p>
+          </div>
+          <div class="item">
+              <img class="item__image" src="/aj1.2.webp" alt="">
+              <h2 class="item__name">Air Jordan 1 Retro High OG<br>'Dark Marina Blue'</h2>
+              <p class="item__price">€157</p>
+          </div>
+          <div class="item">
+              <img class="item__image" src="/aj1.3.webp" alt="">
+              <h2 class="item__name"> Air Jordan 1 Retro High OG<br>'Bubble Gum'</h2>
+              <p class="item__price">€166</p>
+          </div>
+      </div>
+      <div class="products__row">
+          <div class="item">
+              <img class="item__image" src="/aj3.1.webp" alt="">
+              <h2 class="item__name">Air Jordan 3 Retro<br>'UNC'</h2>
+              <p class="item__price">€556</p>
+          </div>
+          <div class="item">
+              <img class="item__image" src="/aj3.2.webp" alt="">
+              <h2 class="item__name">Air Jordan 3 Retro<br>'Fire Red'</h2>
+              <p class="item__price">€435</p>
+          </div>
+          <div class="item">
+              <img class="item__image" src="/aj3.3.webp" alt="">
+              <h2 class="item__name">Air Jordan 3 Retro<br>'Racer Blue'</h2>
+              <p class="item__price">€304</p>
+          </div>
+      </div>
+      <div class="products__row">
+          <div class="item">
+              <img class="item__image" src="/aj4.1.webp" alt="">
+              <h2 class="item__name">Air Jordan 4 Retro<br>'Military Black'</h2>
+              <p class="item__price">€432</p>
+            </div>
+            <div class="item">
+              <img class="item__image" src="/aj4.2.webp" alt="">
+              <h2 class="item__name">Air Jordan 4 Retro<br>'White Oreo'</h2>
+              <p class="item__price">€510</p>
+            </div>
+            <div class="item">
+              <img class="item__image" src="/aj4.3.jpg" alt="">
+              <h2 class="item__name">Air Jordan 4 Retro<br>'Black Canvas'</h2>
+              <p class="item__price">€372</p>
+            </div>
+      </div>
+  </div>
+
+  <div class="opening" id="3">
+    <div class="hours">
+        <h2 class="hours__title">Store Hours</h2>
+        <div class="hours__table">
+            <div class="table__days">
+                <p>Monday</p>
+                <p>Tuesday</p>
+                <p>Wednesday</p>
+                <p>Thursday</p>
+                <p>Friday</p>
+                <p>Saturday</p>
+                <p>Sunday</p>
+            </div>
+            <div class="table__line"></div>
+            <div class="table__time">
+                <p>09:00 - 18:00</p>
+                <p>closed</p>
+                <p>09:00 - 18:00</p>
+                <p>09:00 - 18:00</p>
+                <p>09:00 - 18:00</p>
+                <p>12:00 - 18:00</p>
+                <p>closed</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__info">
+            <p id="email"><span>email</span>: highsneaks@gmail.com</p>
+            <!--loader bron: https://codepen.io/TaniaLD/pen/kOeKKy-->
+            <p id="address"><span>Address</span><div id="loader"></div><span id="place"></span></p>
+            <p id="phone"><span>phone</span>: +1 800-778-7879</p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
