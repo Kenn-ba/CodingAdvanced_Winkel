@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import { MAPBOX_ACCESS_TOKEN } from './secretMapbox.json';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
   // Optional parameters
